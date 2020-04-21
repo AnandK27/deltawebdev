@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="game.css" rel="stylesheet">
+<title>
+	Le Game
+</title>
+</head>
+<body>
+<audio id='audCountDown'>
+	<source src="./sounds/countDown.mp3" type="audio/mpeg">
+</audio>
+
+<audio id='audPointScore'>
+	<source src="./sounds/pointScore.mp3" type="audio/mpeg">
+</audio>
+
+<audio id='audErrorOption'>
+	<source src="./sounds/errorOption.mp3" type="audio/mpeg">
+</audio>
+
+<audio id='audGameStop'>
+	<source src="./sounds/gameStop.mp3" type="audio/mpeg">
+</audio>
+
+<audio id='audWinGame'>
+	<source src="./sounds/winGame.mp3" type="audio/mpeg">
+</audio>
+
+<audio id='audGameStart'>
+	<source src="./sounds/gameStart.mp3" type="audio/mpeg">
+</audio>
+
+<audio id='audEasy'>
+	<source src="./sounds/easy.mp3" type="audio/mpeg">
+</audio>
+
+<audio id='audMedium'>
+	<source src="./sounds/medium.mp3" type="audio/mpeg">
+</audio>
+
+<audio id='audHard'>
+	<source src="./sounds/hard.mp3" type="audio/mpeg">
+</audio>
+	<div class= 'difficulty' >
+		<span class = "header">Set Difficulty<span></span></span>
+		<form class='diff' id='diff'>
+			<input type='radio' name='difficulty' id='easy' value='easy'></input>
+			<label for='easy'>Easy</label>
+			<input type='radio' name='difficulty' id='medium' value='medium' checked></input>
+			<label for='medium'>Medium</label>
+			<input type='radio' name='difficulty' id='hard' value='hard'></input>
+			<label for='hard'>Hard</label>
+		</form>
+	</div>
+	<header>
+		<span class='start'><span>Start Game</span></span>
+		<span class='about'>About Game<span></span></span>
+		<span class='stop'>Stop Game<span></span></span>
+
+	</header>
+<article>
+	<div class= 'Time'><b>Time</b><br><span class='timer'>0.000</span>s
+	</div>
+	<div class='highS'><b>HighScore</b><br><span class='highScore'>0.000</span>s
+	</article>
+	<main>
+<div class='container'>
+<div class='cell row1 left one'>1</div>
+<div class='cell row1 left two'>2</div>
+<div class='cell row1 left three'>3</div>
+<div class='cell row1 left four'>4</div>
+<div class='cell row1 left five'>5</div>
+
+<div class='cell row1 center one'>1</div>
+<div class='cell row1 center two'>2</div>
+<div class='cell row1 center three'>3</div>
+<div class='cell row1 center four'>4</div>
+<div class='cell row1 center five'>5</div>
+
+<div class='cell row2 left six'>6</div>
+<div class='cell row2 left seven'>7</div>
+<div class='cell row2 left eight'>8</div>
+<div class='cell row2 left nine'>9</div>
+<div class='cell row2 left ten'>10</div>
+
+<div class='cell row2 center six'>6</div>
+<div class='cell row2 center seven'>7</div>
+<div class='cell row2 center eight'>8</div>
+<div class='cell row2 center nine'>9</div>
+<div class='cell row2 center ten'>10</div>
+
+
+<div class='cell row3 left eleven'>11</div>
+<div class='cell row3 left twelve'>12</div>
+<div class='cell row3 left thirteen'>13</div>
+<div class='cell row3 left fourteen'>14</div>
+<div class='cell row3 left fifteen'>15</div>
+
+<div class='cell row3 center eleven'>11</div>
+<div class='cell row3 center twelve'>12</div>
+<div class='cell row3 center thirteen'>13</div>
+<div class='cell row3 center fourteen'>14</div>
+<div class='cell row3 center fifteen'>15</div>
+
+
+<div class='cell row4 left sixteen'>16</div>
+<div class='cell row4 left seventeen'>17</div>
+<div class='cell row4 left eighteen'>18</div>
+<div class='cell row4 left nineteen'>19</div>
+<div class='cell row4 left twenty'>20</div>
+
+<div class='cell row4 center sixteen'>16</div>
+<div class='cell row4 center seventeen'>17</div>
+<div class='cell row4 center eighteen'>18</div>
+<div class='cell row4 center nineteen'>19</div>
+<div class='cell row4 center twenty'>20</div>
+
+
+</div>
+<div class='aboutContent'><span>Click the numbers as quickly as you can</span></div>
+<div class='counterBox'><span class='counter'></span></div>
+<div class='leaderBoard'>
+<h1>Leaderboard</h1>
+<h2>Difficulty : <span class='difficultyLeader'></span></h2>
+<ol>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<h2 class='foot'>Reset</h2>
+</div>
+</main>
+<script src="game.js"></script>
+</body>
+</html>

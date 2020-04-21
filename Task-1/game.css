@@ -1,0 +1,440 @@
+*{
+	font-family: sans-serif;
+}
+
+body{
+	background: linear-gradient(lightskyblue,deepskyblue) no-repeat;
+}
+ol{
+	list-style-position: inside;
+}
+ol li{
+	text-align: center;
+}
+
+h1{
+	background: grey;
+	padding: 10px;
+	margin: 0;
+}
+
+h2{
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1.25em;
+	background: lightblue;
+	margin: 0 20%;
+	border-radius: 0 0px 10px 10px;
+	text-align: center;
+}
+
+.foot{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 40%;
+	box-sizing: border-box;
+	padding: 5px auto;
+	border-radius: 10px 10px 0 0;
+	cursor: pointer;
+}
+article{
+text-align: right;
+font-size: 1.5em;
+}
+.highS{
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	margin: 10px 5%;
+}
+.Time{
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	margin: 10px 5%;
+}
+header{
+	display: flex;
+	background: grey;
+	margin: auto;
+}
+.start{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	margin: 10px auto;
+	background-color: green;
+	padding: 10px 20px;
+	border-radius: 20px;
+	color: white;
+	border: solid 2px white;
+	box-shadow: 4px 2.5px rgba(169,169,169,0.5);
+}
+
+.start span:after{
+	content: '\25ba';
+	position: absolute;
+  right: -8%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.start:hover span {
+  padding-right: 20px;
+}
+
+.start:hover span:after {
+  opacity: 1;
+right: 10%;
+}
+
+.stop{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	margin: 10px auto;
+	padding: 10px 20px;
+	background-color: red;
+	border: solid 2px white;
+	border-radius: 20px;
+	color: white;
+	box-shadow: 4px 2.5px rgba(169,169,169,0.5);
+}
+.stop span:after{
+	content: '\25fc';
+	position: absolute;
+  right: -8%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.stop:hover span {
+  padding-right: 20px;
+}
+
+.stop:hover span:after {
+  opacity: 1;
+right: 10%;
+}
+
+.about{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	margin: 10px auto;
+	padding: 10px 20px;
+	background-color: royalblue;
+	border: solid 2px white;
+	border-radius: 20px;
+	color: white;
+	box-shadow: 4px 2.5px rgba(169,169,169,0.5);
+}
+
+.about span:after{
+	content: '\2630';
+	position: absolute;
+  right: -8%;
+	top: 19%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.about:hover span {
+  padding-right: 20px;
+}
+
+.about:hover span:after {
+  opacity: 1;
+right: 10%;
+}
+
+.difficulty .header{
+	position: relative;
+	cursor: pointer;
+}
+
+.difficulty .header span:after{
+	content: '\25bc';
+	position: absolute;
+  right: -8%;
+	top: 19%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.difficulty .header:hover span {
+  padding-right: 20px;
+}
+
+.difficulty .header:hover span:after {
+  opacity: 1;
+right: 10%;
+}
+
+main{
+	width: 70%;
+	padding: 0px;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 10px;
+	max-width: 600px
+}
+.container{
+	width: 200%;
+	top: 0;
+	left: -100%;
+	margin: 0 auto;
+	display: grid;
+	position: relative;
+	box-sizing: border-box;
+	grid-template-columns: repeat(10,1fr);
+	background: blue;
+	border-radius: 10px;
+}
+.cell{
+	background: lightblue;
+	width: 100%;
+	padding: 50% 0;
+	text-align: center;
+	height: 50%;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	line-height: 0;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border : solid 5px blue;
+	font-size: 2.5em;
+}
+
+.row1{
+  position: relative;
+	animation: move 4s linear infinite reverse;
+}
+
+.row2{
+  position: relative;
+	animation: move 7s linear infinite;
+}
+
+.row3{
+  position: relative;
+	animation: move 6s linear infinite reverse;
+}
+
+.row4{
+  position: relative;
+	animation: move 5s linear infinite;
+}
+.counterBox{
+	text-align: center;
+	margin: 0;
+	box-sizing: border-box;
+	line-height: 0;
+	position: absolute;
+	background: blue;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height:100%;
+	font-size: 10em;
+}
+
+.counter{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.hide {
+	display: none;
+}
+
+.cell:hover{
+	transform: translateY(-5%);
+}
+.leaderBoard{
+	text-align: center;
+	margin: 0;
+	box-sizing: border-box;
+	line-height: 2em;
+	position: absolute;
+	background: blue;
+	left: 0;
+	top: 0;
+	width: 100%;
+	font-size: 1.2em;
+	height: 100%;
+}
+
+input[type='radio']{
+	display: none;
+}
+.header{
+	text-align: center;
+	display: block;
+	margin: 10px auto;
+}
+form{
+	 display: flex;
+	 justify-content: space-around;
+
+}
+@keyframes move{
+	0%{
+		transform: translateX(0%);
+	}
+	100%{
+		transform: translateX(500%);
+	}
+}
+.start:hover span{
+	content: '\00bb';
+}
+
+.start:active{
+	background: grey;
+}
+
+.stop:active{
+	background: grey;
+}
+
+input+label{
+	background: gainsboro;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 33.3%;
+	text-align: center;
+	border-left: solid 2px grey;
+	border-right: solid 2px grey;
+	margin: 0;
+	transition: 1s;
+	cursor: pointer;
+}
+input[id='hard'] + label{
+	border-right: solid 2px grey;
+}
+input:checked + label{
+	background: rgb(220,20,60);
+}
+
+.difficulty .header{
+	color: white;
+	background: grey;
+	margin:0;
+	padding: 10px;
+}
+
+.aboutContent{
+	text-align: center;
+	margin: 0;
+	box-sizing: border-box;
+	line-height: 2em;
+	position: absolute;
+	background: blue;
+	left: 0;
+	top: 0;
+	width: 100%;
+	font-size: 2em;
+	height: 100%;
+	z-index: 2;
+	display: none;
+	background: lightblue;
+	border-radius: 10px;
+}
+.aboutContent span{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+input:hover + label{
+	background: lightcoral;
+}
+@media only screen and (max-width: 600px){
+header{
+	flex-direction: column;
+}
+
+.diff{
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+input + label{
+	width: 100%;
+}
+
+.difficulty .header:hover + .diff{
+	display : flex;
+}
+.diff:hover{
+	display : flex;
+}
+
+.counterBox{
+	font-size: 5em;
+}
+
+.cell{
+	font-size: 1.5em;
+}
+article{
+	font-size: initial;
+}
+.leaderBoard{
+	font-size: 1em;
+	line-height: 1.5;
+}
+}
+
+@media only screen and (max-width: 500px){
+
+	h1,h2{
+		line-height: 1;
+		font-size: 1em;
+	}
+	.aboutContent{
+		line-height: 1;
+	}
+}
+
+@media only screen and (max-width: 350px){
+	.leaderBoard{
+		line-height: 1.2;
+	}
+	h1,h2{
+		font-size: 15px;
+		line-height: 1;
+	}
+
+	.aboutContent{
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 290px){
+	.leaderBoard{
+		font-size: 15px;
+		line-height: 1;
+	}
+	h1,h2{
+		font-size: 13px;
+		line-height: 1;
+	}
+
+	.aboutContent{
+		font-size: 20px;
+	}
+
+	.cell{
+		font-size: 1em;
+	}
+}
